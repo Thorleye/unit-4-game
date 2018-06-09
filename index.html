@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Crystal Collector</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css" />
-    <script src="/assets/javascript"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="./assets/javascript/game.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Crystals Collector!</h1>
-    </header>
     <div class="wrapper">
+
+        <header>
+            <h1><strong>Crystal Collector!</strong></h1>
+        </header>
+    
         
         <div class="instruction">
             <p>You will be given a random number at the start of the game.</p>
@@ -25,8 +28,12 @@
         <div id="goal"></div>
 
         <div id="wins"></div>
+        
+        <img src="assets/images/Opals-10.jpg" class="crystal" id="white"></img>
+        <img src="assets/images/blue-gem.png" class="crystal" id="blue"></img>
+        <img src="assets/images/red.jpg" class="crystal" id="red"></img>
+        <img src="assets/images/item_icon_star150.png" class="crystal" id="yellow-gem"></img>
 
-        <div class= "crystal"></div>
 
         <div> Your total score is:</div>
         <div id="score"></div>

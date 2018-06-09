@@ -1,0 +1,50 @@
+body {
+    background-image: url("../images/country-quilt.png");
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    line-height: 24px;
+    line-break: auto;
+}
+
+.wrapper {
+    width: 70%;
+    margin: 3%;
+}
+
+header {
+    background-color: orange;
+    color: white; 
+    font-size: 24px;
+    margin-bottom:5%;
+}
+
+
+.instruction {
+    background-color: beige;
+    color: green;
+}
+
+.goal {
+    background: green;
+    color: purple;
+}
+
+.crystal {
+    width: 100px;
+    height: 100px;
+    float:left;
+}
+
+#yellow {
+
+}
+
+#red {
+}
+
+#blue {
+}
+
+#green {
+}
+
