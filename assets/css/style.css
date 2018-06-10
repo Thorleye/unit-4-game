@@ -30,7 +30,7 @@ header {
 }
 
 .crystal {
-    width: 25%;
+    width: 150px;
     float: left;
     overflow: auto;
 }
@@ -38,10 +38,11 @@ header {
 #points , #goal , #wins {
     padding: 30px;
     height: 60px;
-    border-right: 20px;
+    margin-right: 5%;
     width: 33%;
     background-color: darkgreen;
     color: lightgreen;
+    float: left;
 }
 
 #wins {
@@ -51,4 +52,9 @@ header {
 #points {
     overflow: auto;
     float: bottom;
+}
+@media (max-width:786px){
+    .wrapper {width:100%}
+    .crystal{width:25%}
+    #points , #goal , #wins {width:50%; float: left;}
 }
