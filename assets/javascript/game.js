@@ -20,48 +20,53 @@ $(document).ready(function(){
         var goal = targetScore()
 
     //Game conditions//
-    reset()
-    $("#goal").html("<p> Target Score is: " + goal + "</p>")
-    $("#wins").html("<p> Wins:" + wins + "<br> Losses:" + losses);  //wins loss div
-    $("#points").html("<p>Current Score: " + currentScore);  //score counter div
-    
+    newGame()
+
     //function to set points per crystal
     $("#crystalOne").on("click", function(){             //adds points to current points
         currentScore = currentScore + one
-        $("#points").html(currentScore);
+        scoreUpdate()
     })
     $("#crystalTwo").on("click", function(){
         currentScore = currentScore + two
-        $("#points").html(currentScore);
+        scoreUpdate()
     })
     $("#crystalThree").on("click", function(){
         currentScore = currentScore + three
-        $("#points").html(currentScore);
+       scoreUpdate()
         })
     $("#crystalFour").on("click", function(){
         currentScore = currentScore + four
-        $("#points").html(currentScore);
+        scoreUpdate()
         })
     
     //win conditions
 
-    if (currentScore === goal){
-        wins++
-        reset()
-    }
 
-    if (currentScore > goal){
-        losses++
-        reset()
-    }
     //a reset game function
     
-    
+    function scoreUpdate(){
+        if (currentScore == goal){
+            wins++
+            newGame()
+        }
+        
+       else if (currentScore > goal){
+            losses++
+            newGame()
+        }   
 
-    function reset(){
+        else {$("#points").html(currentScore);}          
+    }
+
+    //Here are the game conditions
+    function newGame(){
         goal = targetScore();
         crystalValues();
+        $("#goal").html("<p> Target Score is: " + goal + "</p>")
+        $("#wins").html("<p> Wins:" + wins + "<br> Losses:" + losses);  //wins loss div
         currentScore = 0
+        $("#points").html("<p>Current Score: " + currentScore);  //score counter div
     }
 })
 
