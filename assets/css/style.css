@@ -30,24 +30,20 @@ header {
 }
 
 .crystal {
-    width: 100px;
-    height: 100px;
-    float:left;
+    width: 25%;
+    height = width;
+    display: inline;
+    float: left;
 }
 
-.score .points .goal {
+#points , #goal , #wins {
+    padding: 3px;
     height: 60px;
-    width: 50%;
+    width: 33%;
+    background-color: darkgreen;
+    color: lightgreen;
 }
-#yellow {
+#wins {
+    background-color: lightblue;
+    color: darkblue;
 }
-
-#red {
-}
-
-#blue {
-}
-
-#green {
-}
-
