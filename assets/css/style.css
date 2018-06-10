@@ -35,6 +35,10 @@ header {
     float:left;
 }
 
+.score .points .goal {
+    height: 60px;
+    width: 50%;
+}
 #yellow {
 }
 
