@@ -6,13 +6,13 @@ $(document).ready(function(){
    
     //function to set 4 random numbers
     function crystalValues(){
-        one =(Math.floor(Math.random()*11+1))
+        one =Math.floor(Math.random()*11+1)
         two = Math.floor(Math.random()*11+1)
         three = Math.floor(Math.random()*11+1)
         four = Math.floor(Math.random()*11+1)
         console.log(one, two, three, four)}
 
-    //function to set target points
+    //function to set target Score
     function targetScore(){
         return [Math.floor(Math.random()* 101+19)]
         } 
@@ -64,4 +64,3 @@ $(document).ready(function(){
             $("#points").html("<p>Current Score: " + currentScore);  //score counter div
         }
 })
-

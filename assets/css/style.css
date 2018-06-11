@@ -53,8 +53,9 @@ header {
     overflow: auto;
     float: bottom;
 }
-@media (max-width:786px){
+@media (max-width:870px){
     .wrapper {width:100%}
     .crystal{width:25%}
+    #wins{margin-right:100%;}
     #points , #goal , #wins {width:50%; float: left;}
 }
