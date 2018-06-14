@@ -28,7 +28,7 @@ $(document).ready(function(){
     //function to add points when a certain crystal is clicked
     $("#crystalOne").on("click", function(){             
         var points = $(this).attr("data-points")
-        currentScore = currentScore + points
+        currentScore = currentScore + randomNumberArray[0]
         })
     $("#crystalTwo").on("click", function(){
         currentScore = currentScore + randomNumberArray[1]
